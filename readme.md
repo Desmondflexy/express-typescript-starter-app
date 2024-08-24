@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Before you begin, ensure you have met the following requirements:
 
--   You have installed the latest version of [Node.js and npm](https://nodejs.org/en/download/)
+- You have installed the latest version of [Node.js and npm](https://nodejs.org/en/download/)
 
 ### Installing
 
@@ -23,10 +23,13 @@ To install the project, follow these steps:
     ```
 
 2. Install NPM packages
+
     ```bash
     npm install
     ```
+
     or
+
     ```bash
     yarn
     ```
@@ -39,7 +42,9 @@ To start the server, run the following command in your terminal:
 npm run tsc
 npm run start
 ```
+
 or
+
 ```bash
 yarn tsc
 yarn start

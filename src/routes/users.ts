@@ -1,10 +1,8 @@
-import express from 'express';
+import { Router } from "express";
 
-const router = express.Router();
+const router = Router();
 
-/* GET users listing. */
-router.get("/", function (req, res, next) {
-    res.send("respond with a resource");
-});
+// define user routes here
+
 
 export default router;
