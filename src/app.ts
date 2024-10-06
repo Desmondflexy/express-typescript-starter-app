@@ -3,7 +3,7 @@ import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import dotenv from 'dotenv';
 import path from "path";
-import usersRouter from './routes/users';
+import router from './routes';
 
 dotenv.config();
 
@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "../public")));
 
-app.use('/users', usersRouter);
+app.use(router);
 
 app.listen(3000, () => console.log('Server is running on port 3000'));
+    

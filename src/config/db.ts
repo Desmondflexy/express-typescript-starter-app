@@ -1,2 +1,0 @@
-// database configuration goes here
-
