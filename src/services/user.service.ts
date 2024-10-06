@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { appError } from "../utils.ts";
+import { appError } from "../utils";
 
 class UserService {
     async getUsers(req: Request): ServiceResponseType {

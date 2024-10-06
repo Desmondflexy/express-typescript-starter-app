@@ -3,7 +3,7 @@ import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import path from "path";
 import router from './routes';
-import { ENV } from './utils.ts';
+import { ENV } from './utils';
 
 const app = express();
 app.use(logger('dev'));
