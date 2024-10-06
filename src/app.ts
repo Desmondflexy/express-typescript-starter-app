@@ -1,11 +1,9 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
-import dotenv from 'dotenv';
 import path from "path";
 import router from './routes';
-
-dotenv.config();
+import { ENV } from './utils.ts';
 
 const app = express();
 app.use(logger('dev'));
@@ -16,5 +14,4 @@ app.use(express.static(path.join(__dirname, "../public")));
 
 app.use(router);
 
-app.listen(3000, () => console.log('Server is running on port 3000'));
-    
+app.listen(3000, () => console.log(`Server is running on port ${ENV.PORT} in ${ENV.NODE_ENV} mode`));

@@ -1,13 +1,11 @@
-import express, { Router } from 'express';
+import express from 'express';
+import usersRouter from "./users";
 
 const router = express.Router();
 
-type RoutesListType = {
-    path: string;
-    route: Router;
-}[];
-
-const defaultRoutes: RoutesListType = [];
+const defaultRoutes: RoutesListType = [
+    { path: "/users", route: usersRouter }
+];
 
 defaultRoutes.forEach((route) => {
     router.use(route.path, route.route);
