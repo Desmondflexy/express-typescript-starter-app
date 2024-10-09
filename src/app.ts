@@ -14,4 +14,4 @@ app.use(express.static(path.join(__dirname, "../public")));
 
 app.use(router);
 
-app.listen(3000, () => console.log(`Server is running on port ${ENV.PORT} in ${ENV.NODE_ENV} mode`));
+app.listen(ENV.PORT, () => console.log(`Server is running on port ${ENV.PORT} in ${ENV.NODE_ENV} mode`));
